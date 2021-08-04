@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Proyecto John</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+  </head>
+  <body>
+    <header class="header">
+        <a href="#"><h1 class="title">DOM PRACTICAS</h1></a>
+        <hr class="hr">
+    </header>
+      <button id="hamburger"class="hamburger hamburger--collapse hamburger-btn" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    <nav id="menu" class="menu">
+      <ul class="main-menu">
+        <li class="main-menu__item">
+          <a href="#time" class="main-menu__link"><i class="fas fa-file-code"></i>CURRENT TIME</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#section2" class="main-menu__link"><i class="fas fa-file-pdf"></i>section2</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#section3" class="main-menu__link"><i class="fas fa-code"></i>section3</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#section4" class="main-menu__link"><i class="fas fa-file-image"></i>section4</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#section5" class="main-menu__link"><i class="fas fa-file-word"></i>section5</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <section id="time" class="main__section time">
+        <h2 class="time__title">CURRENT TIME</h2>
+
+        <div class="time__watch">
+            <div class="watch__packer"><div  class="watch__item"><span id="hour" class="time__span">12</span></div><b>HOUR </b></div> 
+            <div class="watch__packer"><div  class="watch__item"><span id="minute" class="time__span">01</span></div><b>MINUTE </b></div> 
+            <div class="watch__packer"><div  class="watch__item"><span id="second" class="time__span">46</span></div><b> SECOND</b></div> 
+        </div>
+
+        <div class="time__calendar">
+          <div class="calendar__packer"><div  class="time__item"><span id="year" class="time__span">2021</span></div><b> YEAR</b></div> 
+          <div class="calendar__packer"><div  class="time__item"><span id="month" class="time__span">SEP</span></div><b>MONTH  </b></div> 
+          <div class="calendar__packer"><div  class="time__item"><span id="day" class="time__span"><span>03</div><b> DAY </b></div> 
+          <div class="calendar__packer calendar__packer--week"><div  class="time__item"><span id="week" class="time__span">04</span></div><b> WEEK</b></div> 
+        </div>
+
+        <div class="time__mainBtn">
+          <button class="time__button" id="btnClock"><i class="far fa-clock"></i><b> Clock</b></button>
+          <button class="time__button" id="btnPlay"><i class="fas fa-pause-circle"></i><b> Play & Pause</b></button>
+          <button class="time__button" id="btnAlarm"><i class="fas fa-bell icon"></i><b> Alarm</b></button>
+          <button class="time__button" id="btnAlarmStop"> <i class="fas fa-bell-slash icon"></i><b> Stop Alarm</b></button>
+        </div>
+      </section>
+      <section id="section2" class="main__section"><h2>SECTION 2</h2></section>
+      <section id="section3" class="main__section"><h2>SECTION 3</h2></section>
+      <section id="section4" class="main__section"><h2>SECTION 4</h2></section>
+      <section id="section5" class="main__section"><h2>SECTION 5</h2></section>
+    </main>
+
+    <!-- <script src="js/menu.js" type="module"></script> -->
+    <script src="js/index.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/11614eb144.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
